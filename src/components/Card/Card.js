@@ -9,9 +9,10 @@ const Card = ({ pokemon }) => {
             <div className="cardTypes">
                 <div>タイプ</div>
                 {pokemon.types.map((type) => {
-                    return <div>
-                        <span className='typeName'>{type.type.name}</span>
-                    </div>
+                    return 
+                        <div key={type.type.name}>
+                            <span className='typeName'>{type.type.name}</span>
+                        </div>
                 })}
             </div>
         </div>
